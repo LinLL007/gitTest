@@ -1,0 +1,204 @@
+gamerule mobGriefing false
+gamerule keepInventory true
+
+-worldwide 国际服 
+-perfectworld 国服 
+-novid 跳过开场动画 
+-highpriority (-high) 高优先级，就是要求CPU处理运算CS时是最高优先级,提高性能的 
+-tickrate 128 游戏采样速率 
+-nojoy 不使用摇杆，可提高少部分性能
++exec autoexec.cfg 自动加载autoexec.cfg 
+-preload 让CSGO预加载纹理和建模，可以提高性能
+-processheap 有效缓解内存引起的顿卡，VG,NIP,AD的大神们也都用这个参数
+-freq 144 强制游戏的刷新率
+-console 启用控制台
+-noforcemaccel 恢复到桌面鼠标加速度设置，即使用驱动设置的鼠标加速度
+-noforcemparms 这个是在游戏中禁用鼠标按键的win系统快捷键功能
+-noforcemspd 游戏和桌面鼠标速度一致
+-noaafonts 取消平台默认的字体反混淆功能
+-threads 12 多线程处理，数字等于CPU线程数量
+
+
+启动项:-novid -high -tickrate 128 -nojoy -preload -processheap -freq 144
+
+-worldwide 国际服
+
+-perfectworld 国服
+
+-novid 跳过开场动画
+
+-highpriority (-high) 高优先级，就是要求CPU处理运算CS时是最高优先级，提高性能的
+
+-tickrate 128  游戏采样速率128，即本地游戏的时候为128tick
+
+-nojoy 不使用摇杆，可提高少部分性能（目前游戏大部分cfg自带，所以可以设置也可以不用设置）
+
+-preload 让CSGO预加载纹理和建模，可以提高性能
+
+-processheap 有效缓解内存引起的顿卡，VG,NIP,AD的大神们也都用这个参数
+
+-freq 144 强制游戏的刷新率 （这个要看你的显示器最大支持不然设置后也无用）
+
+-console 打开游戏的时候自动打开控制台
+
+-noforcemaccel 恢复到桌面鼠标加速度设置，即使用驱动设置的鼠标加速度
+
+-noforcemparms 这个是在游戏中禁用鼠标按键的win系统快捷键功能
+
+-noforcemspd 游戏和桌面鼠标速度一致
+
+-noaafonts 取消平台默认的字体反混淆功能
+
+-threads 12 多线程处理，数字等于CPU线程数量
+
+控制台指令：
+
+sv_cheats 1 开启作弊（官方服务器不能用）
+
+sv_autobunnyhopping 1 开启自动连跳（官方服务器不能用）
+
+cl_showpos 1 显示速度
+
+bind mwheelup +jump
+
+bind mwheeldown +jump 绑定滚轮上/下为跳
+
+bind alt noclip 按alt自由飞行模式（官方服务器不能用）
+
+
+
+net_graph 1 开启帧数、网络参数显示
+
+net_graph 0 关闭
+
+net_graphpos 0 参数显示在界面左边
+
+net_graphpos 1 参数显示在界面右边
+
+net_graphpos 2 参数显示在界面中间
+
+net_graphheight 数值，数值越大，位置越高
+
+net_graphproportionalfont 0.9 将参数字体变小
+
+net_graphproportionalfont 1 将参数字体变大(默认)
+
+sv_showimpacts 1 显示弹痕
+
+mp_startmoney 16000 出生金钱16000
+
+mp_restartgame 1 (1秒后刷新游戏)
+
+mp_autoteambalance 1 关闭人数平衡
+
+mp_buy_anywhere 1  在任意地点都能购买武器
+
+mp_roundtime 60  死亡竞赛的回合时间60分钟
+
+mp_roundtime_defuse “60”休闲/竞技模式每局时间60分钟
+
+mp_buytime 9999 开局购买时间9999秒
+
+mp_freezetime 0 每局开始前冻结时间0秒
+
+sv_grenade_trajectory 1 示投掷物（烟闪火雷等）的飞行轨迹
+
+sv_grenade_trajectory_time 10 投掷物轨迹显示10秒
+
+sv_showimpacts_time 1 弹着点标识显示1秒
+
+give weapon_hegrenade 获取一枚手雷
+
+give weapon_flashbang 获取一枚闪光震撼弹
+
+give weapon_smokegrenade 获取一枚烟雾弹
+
+bot_add 随机增加一个bot
+
+bot_add_ct 增加一名CT
+
+bot_add_t 增加一名T
+
+bot_stop 电脑玩家停止
+
+bot_place 电脑玩家到准心这来
+
+bot_kick 踢出所有电脑
+
+bot_kill 处死所有电脑
+
+
+
+spec_pos 获得当前摄像机坐标
+
+spec_goto 1168.3 2181.4 145.0 1.8 158.3;spec_lerpto 1479.1 2053.4 122.9 4.3 173.6 5 5 花5秒从第一个坐标移动到第二个坐标
+
+mirv_deathmsg block !11?* 只显示该玩家(id)的击杀信息?
+
+mirv_deathmsg cfg noticelifetime 60 击杀信息停留时间 （数值代表秒数）
+
+mirv_deathmsg highlightid 11 高亮玩家(id)击杀信息
+
+cl_draw_only_deathnotices 1（隐藏UI，0是恢复UI）
+
+https://www.bilibili.com/read/cv551936/
+
+
+
+bind f "+lookatweapon; r_cleardecals"   按f刷新血迹并且检视武器
+
+bind shift "+speed;r_cleardecals" 按shift刷新血迹并且静步
+
+bind - "m_yaw 100"
+
+bind = "m_yaw 0.022"
+
+按- 开启，按=关闭，除了转没有任何用处
+
+慢陀螺
+
+-left 开启 +left 关闭
+
+bind v +jumpthrow；alias +jumpthrow "+jump;-attack;-attack2";alias -jumpthrow -jump;    绑定v键跳投
+
+
+
+指令如下 注意如果已经装备了刀请换成原版刀不然可能无法使用指令
+
+开启作弊 sv_cheats 1
+
+所有武器都能在本地服务器中使用 mp_items_prohibited 0
+
+可以丢刀 mp_drop_knife_enable 1
+
+刺刀- give weapon_bayonet;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+折叠刀 - give weapon_knife_flip;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+穿肠刀 - give weapon_knife_gut;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+爪子刀 - give weapon_knife_karambit;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+M9 - give weapon_knife_m9_bayonet;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+猎杀者匕首 - give weapon_knife_tactical;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+蝴蝶刀 - give weapon_knife_butterfly;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+弯刀 - give weapon_knife_falchion;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+暗影双匕 - give weapon_knife_push;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+鲍伊 - give weapon_knife_survival_bowie;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+熊刀 - give weapon_knife_ursus;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+折刀- give weapon_knife_gypsy_jackknife;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+短剑 - give weapon_knife_stiletto;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+锯齿爪 - give weapon_knife_widowmaker;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+幽灵折叠刀 - give weapon_knife_ghost;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+海报短刀 - give weapon_knife_css; ent_fire weapon_knife addoutput "classname weapon_knifegg" 作者：无聊到吃薯片 https://www.bilibili.com/read/cv14147561/ 出处：bilibili
